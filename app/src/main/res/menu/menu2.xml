@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_rotation"
+        android:title="이미지(회전)"/>
+
+    <item
+        android:id="@+id/menu_item_size"
+        android:title="이미지(크기)" />
+</menu>
