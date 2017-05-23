@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(v.getId() == R.id.but1){
             menu.setHeaderTitle("배경색");
-            // menu.setHeaderIcon(R.drawable.icon1);
+            menu.setHeaderIcon(R.drawable.icon1);
             menuInflater.inflate(R.menu.menu1, menu);
         } // end of if
 
