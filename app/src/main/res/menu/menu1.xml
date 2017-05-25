@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_item_red"
+        android:id="@+id/menu1_item_red"
         android:title="배경색(red)"/>
 
     <item
-        android:id="@+id/menu_item_blue"
+        android:id="@+id/menu1_item_blue"
         android:title="배경색(blue)" />
 
     <item
-        android:id="@+id/menu_item_pink"
+        android:id="@+id/menu1_item_pink"
         android:title="배경색(pink)" />
 </menu>
