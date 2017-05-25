@@ -8,11 +8,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout Linear; // 전역 변수
     Button but2;
+    ImageView img1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(but2);
 
         Linear = (LinearLayout) findViewById(R.id.Linear);
+        img1 = (ImageView) findViewById(R.id.img1);
     }
 
     @Override
@@ -61,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menu2_item_rotation:
-                but2.setRotation(90);
+                img1.setRotation(img1.getRotationX()+90);
                 return true;
             case R.id.menu2_item_size:
-                but2.setScaleX(1.5f); // 실수형 => f
-                but2.setScaleY(1.5f);
+                img1.setScaleX(img1.getScaleX()*1.5f); // 실수형 => f
+                img1.setScaleY(img1.getScaleY()*1.5f);;
                 return true;
         } // end of switch
 
